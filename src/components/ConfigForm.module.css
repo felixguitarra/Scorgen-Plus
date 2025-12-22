@@ -1,0 +1,352 @@
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1.5rem;
+  max-width: 1100px;
+  width: 95vw;
+  margin: 0 auto;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  background: linear-gradient(to right, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+  font-weight: 500;
+}
+
+.select {
+  width: 100%;
+  padding: 0.75rem;
+  background: rgba(31, 41, 55, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #f3f4f6;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.select:hover {
+  background: rgba(31, 41, 55, 0.8);
+  border-color: #a78bfa;
+}
+
+.select:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.1);
+}
+
+.select option {
+  background: #1f2937;
+  color: #f3f4f6;
+  padding: 0.5rem;
+}
+
+.button {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(to right, #8b5cf6, #ec4899);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s, opacity 0.2s;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+/* Grids */
+.keysGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.rhythmGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 135px);
+  /* Fixed column width */
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  justify-content: center;
+  /* Center the grid items */
+}
+
+/* Unit Spans - Removed */
+
+/* Unified Item Styles */
+.keyItem,
+.rhythmItem {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.keyItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #e5e7eb;
+}
+
+.rhythmItem {
+  display: flex;
+  flex-direction: column;
+  width: 135px;
+  /* Fixed Width */
+  height: 115px;
+  /* Fixed Height */
+  padding: 0.25rem;
+  /* Minimal padding */
+  overflow: hidden;
+  /* Prevent spill */
+  position: relative;
+  align-items: center;
+  /* Center content horizontally */
+  justify-content: space-between;
+  /* Distribute space */
+}
+
+/* Hover States */
+.keyItem:hover,
+.rhythmItem:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(167, 139, 250, 0.5);
+}
+
+/* Selected States */
+.keyItemSelected,
+.rhythmItemSelected {
+  background: rgba(167, 139, 250, 0.15) !important;
+  border-color: #a78bfa !important;
+  box-shadow: 0 0 0 1px rgba(167, 139, 250, 0.3);
+}
+
+.keyItemSelected {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Checkbox Styles */
+.keyCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 0.9rem;
+}
+
+.keyCheckbox:hover {
+  background: rgba(167, 139, 250, 0.2);
+}
+
+.keyCheckbox input[type="checkbox"] {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox input[type="checkbox"] {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+/* Sliders */
+.tessituraSlider {
+  margin-top: 1rem;
+}
+
+.rangeValues {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+.slider {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #a78bfa;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+.slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #a78bfa;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.1s;
+}
+
+.slider::-moz-range-thumb:hover {
+  transform: scale(1.1);
+}
+
+/* Rhythm Specifics */
+.labelRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+  /* Reduced margin */
+  justify-content: space-between;
+  padding: 0 0.25rem;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+  color: #e5e7eb;
+}
+
+.iconButton:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+/* Rhythm Header Removed */
+
+.weightControl {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: #d1d5db;
+}
+
+.weightInput {
+  width: 45px;
+  padding: 0.25rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* Visual Weight Bars */
+.weightBars {
+  display: flex;
+  gap: 2px;
+  /* Tighter gap */
+  align-items: flex-end;
+  height: 16px;
+  /* Slightly shorter */
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 4px;
+  transition: background 0.2s;
+  width: 100%;
+  /* Full width */
+  justify-content: center;
+  margin-bottom: 2px;
+}
+
+.weightBar {
+  width: 8px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+.weightBar:nth-child(1) {
+  height: 20%;
+}
+
+.weightBar:nth-child(2) {
+  height: 40%;
+}
+
+.weightBar:nth-child(3) {
+  height: 60%;
+}
+
+.weightBar:nth-child(4) {
+  height: 80%;
+}
+
+.weightBar:nth-child(5) {
+  height: 100%;
+}
+
+.weightBarActive {
+  background: linear-gradient(to top, #a78bfa, #f472b6);
+}

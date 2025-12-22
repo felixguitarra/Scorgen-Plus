@@ -1,0 +1,174 @@
+[
+    {
+        "name": "Quarter",
+        "pattern": [
+            "q"
+        ]
+    },
+    {
+        "name": "Two 8ths",
+        "pattern": [
+            "8",
+            "8"
+        ]
+    },
+    {
+        "name": "Half",
+        "pattern": [
+            "h"
+        ]
+    },
+    {
+        "name": "Whole",
+        "pattern": [
+            "w"
+        ]
+    },
+    {
+        "name": "Quarter Rest",
+        "pattern": [
+            "qr"
+        ]
+    },
+    {
+        "name": "Half Rest",
+        "pattern": [
+            "hr"
+        ]
+    },
+    {
+        "name": "8th + 8th Rest",
+        "pattern": [
+            "8",
+            "8r"
+        ]
+    },
+    {
+        "name": "8th Rest + 8th",
+        "pattern": [
+            "8r",
+            "8"
+        ]
+    },
+    {
+        "name": "Two 8th Rests",
+        "pattern": [
+            "8r",
+            "8r"
+        ]
+    },
+    {
+        "name": "Four 16ths",
+        "pattern": [
+            "16",
+            "16",
+            "16",
+            "16"
+        ]
+    },
+    {
+        "name": "8th + Two 16ths",
+        "pattern": [
+            "8",
+            "16",
+            "16"
+        ]
+    },
+    {
+        "name": "Two 16ths + 8th",
+        "pattern": [
+            "16",
+            "16",
+            "8"
+        ]
+    },
+    {
+        "name": "16th + 8th + 16th",
+        "pattern": [
+            "16",
+            "8",
+            "16"
+        ]
+    },
+    {
+        "name": "Rest + 3 16ths",
+        "pattern": [
+            "16r",
+            "16",
+            "16",
+            "16"
+        ]
+    },
+    {
+        "name": "8th Rest + 2 16ths",
+        "pattern": [
+            "8r",
+            "16",
+            "16"
+        ]
+    },
+    {
+        "name": "2 16ths + 8th Rest",
+        "pattern": [
+            "16",
+            "16",
+            "8r"
+        ]
+    },
+    {
+        "name": "16th + Rest + 2 16ths",
+        "pattern": [
+            "16",
+            "16r",
+            "16",
+            "16"
+        ]
+    },
+    {
+        "name": "2 16ths + Rest + 16th",
+        "pattern": [
+            "16",
+            "16",
+            "16r",
+            "16"
+        ]
+    },
+    {
+        "name": "Dotted 8th + 16th",
+        "pattern": [
+            "8d",
+            "16"
+        ]
+    },
+    {
+        "name": "16th + Dotted 8th",
+        "pattern": [
+            "16",
+            "8d"
+        ]
+    },
+    {
+        "name": "Syncopa (8-q-8)",
+        "pattern": [
+            "8",
+            "q",
+            "8"
+        ]
+    },
+    {
+        "name": "Quarter Triplets",
+        "pattern": [
+            "qt",
+            "qt",
+            "qt"
+        ]
+    },
+    {
+        "name": "Eighth Triplets",
+        "pattern": [
+            "8t",
+            "8t",
+            "8t"
+        ]
+    }
+]

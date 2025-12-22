@@ -1,0 +1,11 @@
+.container {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    margin: 2rem 0;
+}
