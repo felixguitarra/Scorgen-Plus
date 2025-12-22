@@ -4,7 +4,9 @@ import { fileURLToPath } from 'url';
 import { createRequire } from 'module';
 import fs from 'fs';
 
+// @ts-ignore - Ignora o erro de 'require' reservado
 const require = createRequire(import.meta.url);
+// @ts-ignore - Ignora o erro de 'import.meta'
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
