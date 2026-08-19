@@ -1,0 +1,29 @@
+# Dependências (Nunca sincronizar)
+node_modules/
+jspm_packages/
+
+# Compilação / Saída (Arquivos gerados)
+dist/
+dist-electron/
+out/
+release/
+*.exe
+*.dmg
+*.AppImage
+
+# Logs e Temporários
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+
+# IDEs (VS Code e Windows)
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Configurações de ambiente (Caso você use futuramente)
+.env
+.env.local
