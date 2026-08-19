@@ -27,3 +27,15 @@ Thumbs.db
 # Configurações de ambiente (Caso você use futuramente)
 .env
 .env.local
+
+# Projeto separado (Python/QML) - não faz parte do app web
+KgenScore/
+
+# Documentos internos de desenvolvimento
+RECOVERY_INSTRUCTIONS.md
+readmet430.md
+.gitignore.bak
+
+# Assets padrão do Vite não utilizados
+public/vite.svg
+src/assets/react.svg

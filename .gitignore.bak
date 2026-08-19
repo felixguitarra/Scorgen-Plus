@@ -1,7 +1,0 @@
-# Ignorar builds e executáveis
-release/*.exe
-release/*.exe.blockmap
-release/win-unpacked/
-node_modules/
-dist/
-.DS_Store

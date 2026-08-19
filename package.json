@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "A sight-reading trainer for musicians",
+  "homepage": "https://felixguitarra.github.io/Scorgen-Plus",
   "author": "Scorgen Team",
   "type": "module",
   "scripts": {
@@ -10,6 +11,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "electron:build-ts": "tsc -p tsconfig.electron.json",
     "electron:dev": "concurrently -k \"cross-env BROWSER=none npm run dev\" \"npm run electron:build-ts && wait-on tcp:5173 && electron .\"",
     "electron:build": "npm run build && npm run electron:build-ts && electron-builder"
@@ -37,14 +40,14 @@
     }
   },
   "dependencies": {
+    "electron-squirrel-startup": "^1.0.1",
     "lucide-react": "^0.554.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.9.6",
     "tonal": "^6.4.2",
     "tone": "^15.1.22",
-    "vexflow": "^5.0.0",
-    "electron-squirrel-startup": "^1.0.1"
+    "vexflow": "^5.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
@@ -59,6 +62,7 @@
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
+    "gh-pages": "^6.3.0",
     "globals": "^16.5.0",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
